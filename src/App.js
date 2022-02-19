@@ -2,7 +2,7 @@
 import "./App.css";
 import Home from "./Components/Home";
 import "./Components/Home.css";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       {/* <h1>ESOL Hakathon</h1> */}
       {/* <header>Take Your ESOL Steps Forward</header> */}
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
