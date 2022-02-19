@@ -1,84 +1,66 @@
-import React, { Component } from "react";
-import Logo from "../Images/logo.jpg";
+import React from "react";
+import Logo from "../Images/logo.webp";
 import welcome from "../Images/welcome.jpg";
+// import Calst from "../Images/Calst.png";
+// import ESOL from "../Images/ESOL.png";
+// import CalstLogo from "../Images/CalstLogo.png";
+import Carousel from "../Components/Carousel";
+// import Footer from "../Components/Footer";
 
-class Home extends Component {
-  render() {
-    return (
+const Home = () => {
+  // const [logo, setLogo] = useState(Logo);
+  // const [calst, setCalst] = useState("");
+  // const [esol, setEsol] = useState(ESOL);
+  // console.log(data);
+  // const data = [Calst, ESOL];
+  // console.log(data);
+  // const answer = "";
+  // const handleClick = (event) => {
+  //   event.preventDefault();
+  //   setCalst("visit Calst https://www.ntnu.edu/isl/calst");
+  // };
+  return (
+    <div>
       <div>
-        <div>
-          <div className="header">
-            {/* <span>
-              CODE <span className="span-your">YOUR</span> FUTURE
-            </span> */}
-            <div className="welcome-image"></div>
-            <img className="image" src={Logo} alt="logo" />
-            <h2>ESOL Hakathon</h2>
-          </div>
-          {/* <div>
-            <h3>Take Your ESOL Steps Forward</h3>
-          </div> */}
-          <div className="main">
-            <div className="welcome-image">
-              <img className="welcome-image" src={welcome} alt="welcome" />
-            </div>
-          </div>
+        <div className="header">
+          <div className="welcome-image"></div>
+          <img className="image" src={Logo} alt="logo" />
+          <h2>firstStep</h2>
         </div>
-        <div className="home-footer">
-          {/* <div className="home-links">
-            <a
-              className="icons-home"
-              href="https://codeyourfuture.io/"
-              target="_blank"
-            >
-              <i className="fa fa-home"></i>
-            </a>
-            <a
-              className="icons-home"
-              href="https://www.facebook.com/codeyourfuture.io"
-              target="_blank"
-            >
-              <i className="fa fa-facebook-square"></i>
-            </a>
-            <a
-              className="icons-home"
-              href="https://twitter.com/CodeYourFuture_"
-              target="_blank"
-            >
-              <i className="fa fa-twitter-square"></i>
-            </a>
-            <a
-              className="icons-home"
-              href="https://www.linkedin.com/company/codeyourfuture"
-              target="_blank"
-            >
-              <i className="fa fa-linkedin-square"></i>
-            </a>
-            <a
-              className="icons-home"
-              href="mailto:contact@codeyourfuture.io"
-              target="_blank"
-            >
-              <i className="fa fa-envelope" />
-            </a>
+
+        <div className="main">
+          <div className="welcome-image">
+            <img
+              className="welcome-image"
+              height={700}
+              src={welcome}
+              alt="welcome"
+            />
+          </div>
+          <div>
+            {/* <h1>{calst}</h1>{" "} */}
+            {/* <img
+              className="image"
+              src={data[0]}
+              alt="logo"
+              onClick={handleClick}
+            /> */}
+          </div>
+          <div>
+            <Carousel />
+          </div>
+          {/* 
+          <div>
+            {" "}
+            <img className="image" src={data[0]} alt="logo" />
           </div> */}
-          {/* <p>Copyright &copy; 2021 Code Your Future</p> */}
         </div>
       </div>
-    );
-  }
-}
-
-// <div>
-//       <div>
-//         <div className="header">
-//           {/* <span>
-//             CODE <span className="span-your">YOUR</span> FUTURE
-//           </span> */}
-//           <div className="logo-image">
-//             <img className="image" src={logo} alt="cyf_logo" />
-//           </div>
-//           <h2>Knowledge Checklist</h2>
-//         </div>
+      <div className="home-footer">
+        <p className="Footer">Copyright &copy; 2021 easyRights</p>
+      </div>
+    </div>
+  );
+};
 
 export default Home;
